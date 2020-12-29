@@ -9,8 +9,7 @@ describe("Repositories", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
-        techs: ["Node", "Express", "TypeScript"],
-        likes: 0
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     expect(isUuid(response.body.id)).toBe(true);
@@ -29,8 +28,7 @@ describe("Repositories", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
-        techs: ["Node", "Express", "TypeScript"],
-        likes: 0
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     const response = await request(app).get("/repositories");
